@@ -6,8 +6,6 @@ public class Exam7 {
 
 	public static void main(String[] args) {
 		
-		System.out.println("開始します");
-		
 		Random rand = new Random();
 		
 		int[] numbers = new int[10];
@@ -30,7 +28,6 @@ public class Exam7 {
 		}
 		double average = (double)sum / (double)numbers.length;
 		
-	
 		System.out.println("");
 		System.out.println("合計値：" + sum + "、平均値：" + average);
 		
