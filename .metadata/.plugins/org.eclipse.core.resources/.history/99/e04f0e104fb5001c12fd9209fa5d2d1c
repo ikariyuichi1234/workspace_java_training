@@ -1,0 +1,24 @@
+package exam;
+
+import java.util.*;
+
+public class Exam1 {
+	public static void main(String[] args) {
+		
+		System.out.println("xに任意の数値を入力します");
+		Scanner num01 = new Scanner(System.in);
+		int x = num01.nextInt();
+		
+		System.out.println("yに任意の数値を入力します");
+		Scanner num02 = new Scanner(System.in);
+		int y = num02.nextInt();
+		
+		if(x > y) {
+			System.out.println("xはyより大きい。");
+		}
+		
+		num01.close();
+		num02.close();
+	}
+
+}

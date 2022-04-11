@@ -1,0 +1,36 @@
+package exam;
+
+import java.util.*;
+
+public class Exam9 {
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("お金を投入してください");
+		int balance = scan.nextInt();
+		
+		if(balance == 160) {
+			System.out.println("ドリンクが購入できました【お釣りなし】");
+			
+			System.out.println("ドリンクをお取りください");
+			
+			balance -= 160;
+			
+		} else if(balance > 160) {
+			System.out.println("ドリンクが購入できました【お釣りあり】");
+			
+			System.out.println("ドリンクをお取りください");
+			
+			balance -= 160;
+			
+		} else if(balance < 160) {
+			System.out.println("金額が足りません");			
+		}
+		
+		if(balance > 0) {
+			System.out.println("お金をお取りください");
+		}
+	}
+
+}

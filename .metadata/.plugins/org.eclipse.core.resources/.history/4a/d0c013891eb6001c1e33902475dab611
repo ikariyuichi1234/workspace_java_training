@@ -1,0 +1,22 @@
+package exam;
+
+import java.util.*;
+
+public class Exam7 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("任意の文字列を入力");
+		String str = scan.nextLine();
+		
+		int x = str.length();
+		
+		for()
+		
+		scan.close();
+
+	}
+
+}

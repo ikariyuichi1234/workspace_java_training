@@ -1,0 +1,26 @@
+package exam;
+
+import java.util.Scanner;
+
+public class Exam10 {
+	public static void main(String[] args) {
+		
+		System.out.println("xに任意の数値を代入します");
+		Scanner num01 = new Scanner(System.in);
+		int x = num01.nextInt();
+		
+		System.out.println("xより小さい任意の数値を入力してください");
+		Scanner num02 = new Scanner(System.in);
+		
+		//while(num02.nextInt() >= x) {
+		//	System.out.println("xより小さい任意の数値を入力してください");
+		//	num02 = new Scanner(System.in);
+		//}
+		
+		System.out.println("xを" + num02.nextInt() + "で割った商は" +  x / num02.nextInt() + "、余りは" + x % num02.nextInt());
+		
+		num01.close();
+		num02.close();
+	}
+
+}

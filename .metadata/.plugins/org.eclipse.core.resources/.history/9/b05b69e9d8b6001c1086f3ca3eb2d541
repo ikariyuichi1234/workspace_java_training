@@ -1,0 +1,14 @@
+package exam;
+
+import java.util.*;
+
+public class Exam4 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		ArrayList<Integer>
+
+	}
+
+}

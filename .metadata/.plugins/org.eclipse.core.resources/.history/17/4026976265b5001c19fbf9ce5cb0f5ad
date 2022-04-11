@@ -1,0 +1,25 @@
+package exam;
+
+import java.util.Scanner;
+
+public class Exam13 {
+	public static void main(String[] args) {
+		
+		System.out.println("xに任意の数値を入力します");
+		Scanner num01 = new Scanner(System.in);
+		int x = num01.nextInt();
+		
+		System.out.println("yに任意の数値を入力します");
+		Scanner num02 = new Scanner(System.in);
+		int y = num02.nextInt();
+		
+		System.out.println("x+y = " + (int)(x + y));
+		System.out.println("x-y = " + (int)(x - y));
+		System.out.println("xy = " + (int)(x * y));
+		System.out.println("x/y = " + (int)(x / y) + "余り" +(int)(x % y));
+		
+		num01.close();
+		num02.close();
+	}
+
+}

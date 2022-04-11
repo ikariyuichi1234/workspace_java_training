@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.buildship.ui.wizard.project.creation">
+		<item key="java_home" value="C:\pleiades\2022-03\java\11"/>
+		<list key="arguments">
+			<item value="wrapper"/>
+			<item value="--gradle-version=7.3.3"/>
+			<item value="--init-script=../.metadata/init.gradle"/>
+		</list>
+	</section>
+</section>
