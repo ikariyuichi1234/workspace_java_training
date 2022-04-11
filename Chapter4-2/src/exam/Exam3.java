@@ -19,6 +19,7 @@ public class Exam3 {
             	break;
             }
         }
+        textdata.remove(textdata.size() - 1);
         System.out.println("");
         System.out.println(textdata);
         
