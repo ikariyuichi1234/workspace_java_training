@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Exam2 {
 
-	public static void main(String[] args) {
+	public static void main (String[] args) {
 		
 		ArrayList<Integer> nums = new ArrayList<Integer>();
 		Random rand = new Random();
