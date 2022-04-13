@@ -2,6 +2,11 @@ package sample1;
 // カリキュラム5章 メソッド
 public class Example5 {
 	public static void main(String[] args){
+		
+//		概要　
+		
+		
+		
 		// 以下のプログラムを、for文とメソッドを使ってリファクタリングしてください。
 
 		// 空文字、0～9の数字、@、No_nameが含まれるものはすべてエラーとして扱います。
