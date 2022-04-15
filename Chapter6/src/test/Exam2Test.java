@@ -31,7 +31,9 @@ class Exam2Test {
 
 	@Test
 	public void test() {
-		assertEquals(Exam2.average(8,12), (8 + 12) / 2);
+		int testnum00 = 100;
+		int testnum01 = 1000;
+		assertEquals(Exam2.average(testnum00, testnum01), (testnum00 + testnum01) / 2);
 	}
 
 }
