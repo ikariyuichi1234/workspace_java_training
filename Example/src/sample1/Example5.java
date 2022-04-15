@@ -2,6 +2,8 @@ package sample1;
 // カリキュラム5章 メソッド
 public class Example5 {
 	
+	private static String Name;
+	
 //	概要
 //	配列checkNamesを作成する
 //	＊変数checkStrにcheckNames[i]を代入する
@@ -24,61 +26,60 @@ public class Example5 {
 		};
 		
 		for (int i = 0; i < checkNames.length; i++) {
-			String checkStr = checkNames[i];
-			if (check01(checkStr)) {
-				System.out.println(checkNames[i] + "さんは正しい名前だと認識されました。");
-			} else {
+			Name = checkNames[i];
+			if (!check01()) {
 				System.out.println(checkNames[i] + "は有効な値ではありません。");
+			} else if (!check02()) {
+				System.out.println(checkNames[i] + "は有効な値ではありません。");
+			} else if (!check03()) {
+				System.out.println(checkNames[i] + "は有効な値ではありません。");
+			} else if (!check04()) {
+				System.out.println(checkNames[i] + "は有効な値ではありません。");
+			} else {
+				System.out.println(checkNames[i] + "さんは正しい名前だと認識されました。");
 			}
 		}
 	}
 	
+
+	
 //	メソッド１
-//	strを【引数にstrを与えたメソッド２の戻り値】で初期化する
-//	strに"No_name"が含まれている場合、falseを戻り値とする
-//	それ以外の場合、trueを戻り値とする
-	public static boolean check01 (String str) {
-		str = check02(str);
-		if (str.contains("No_name")) {
+//	Nameが空文字の場合false、そうでなければtrueを返す
+	public static boolean check01 () {
+		if (Name.length() == 0) {
 			return false;
 		} else {
 			return true;
 		}
 	}
-	
+//	
 //	メソッド２
-//	strが空文字の場合、strを"No_name"で初期化する
-//	strを【引数にstrを与えたメソッド３の戻り値】で初期化する
-//	strを戻り値とする
-	public static String check02 (String str) {
-		if (str.length() == 0) {
-			str = "No_name";
+//	Nameに0~9の数字が含まれる場合false、そうでなければtrueを返す
+	public static boolean check02 () {
+		if (Name.matches(".*([0-9]).*")) {
+			return false;
+		} else {
+			return true;
 		}
-		str = check03(str);
-		return str;
 	}
-//	
 //	メソッド３
-//	strに含まれる0~9の数字を"No_name"に置換する
-//	strを【引数にstrを与えたメソッド４の戻り値】で初期化する
-//	strを戻り値とする
-	public static String check03 (String str) {
-		str = str.replaceAll("[0-9]", "No_name");
-		str = check04(str);
-		return str;
+//	Nameに@が含まれる場合false、そうでなければtrueを返す
+	public static boolean check03 () {
+		if (Name.contains("@")) {
+			return false;
+		} else {
+			return true;
+		}
 	}
-//	
 //	メソッド４
-//	strに含まれる@を"No_name"に置換する
-//	strを戻り値とする
-	public static String check04 (String str) {
-		str = str.replaceAll("@", "No_name");
-		return str;
+//	NameにNo_nameが含まれるfalse、そうでなければtrueを返す
+	public static boolean check04 () {
+		if (Name.contains("No_name")) {
+			return false;
+		} else {
+			return true;
+		}
 	}
-//	
-
-
-
 }	
 		
 		
