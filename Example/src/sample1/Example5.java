@@ -6,9 +6,9 @@ public class Example5 {
 	
 //	概要
 //	配列checkNamesを作成する
-//	＊変数checkStrにcheckNames[i]を代入する
-//	＊【引数にcheckStrを与えたメソッド１の戻り値】がtrueの場合、「checkNames[i]さんは正しい名前だと認識されました。」を表示する。
-//	＊【引数にcheckStrを与えたメソッド１の戻り値】がfalseの場合、「checkNames[i]は有効な値ではありません。」を表示する
+//	＊NameにcheckNames[i]を代入する
+//	＊check01~04のいずれかがfalseの場合、「Nameは有効な値ではありません。」を表示する
+//	＊それ以外の場合、「Nameさんは正しい名前だと認識されました。」を表示する。
 //	繰り返し：＊を【checkNamesの長さ】回繰り返す
 	
 	public static void main(String[] args){
@@ -28,15 +28,15 @@ public class Example5 {
 		for (int i = 0; i < checkNames.length; i++) {
 			Name = checkNames[i];
 			if (!check01()) {
-				System.out.println(checkNames[i] + "は有効な値ではありません。");
+				System.out.println(Name + "は有効な値ではありません。");
 			} else if (!check02()) {
-				System.out.println(checkNames[i] + "は有効な値ではありません。");
+				System.out.println(Name + "は有効な値ではありません。");
 			} else if (!check03()) {
-				System.out.println(checkNames[i] + "は有効な値ではありません。");
+				System.out.println(Name + "は有効な値ではありません。");
 			} else if (!check04()) {
-				System.out.println(checkNames[i] + "は有効な値ではありません。");
+				System.out.println(Name + "は有効な値ではありません。");
 			} else {
-				System.out.println(checkNames[i] + "さんは正しい名前だと認識されました。");
+				System.out.println(Name + "さんは正しい名前だと認識されました。");
 			}
 		}
 	}
