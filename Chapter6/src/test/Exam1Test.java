@@ -36,7 +36,8 @@ class Exam1Test {
 
 	@Test
 	public void 値を２乗する() {
-		assertEquals(Exam1.exp(5), 5 * 5);
+		int testnum = 10;
+		assertEquals(Exam1.exp(testnum), testnum * testnum);
 		}
 
 	}

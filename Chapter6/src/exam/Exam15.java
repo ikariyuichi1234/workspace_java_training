@@ -6,14 +6,17 @@ public class Exam15 {
 
 //	概要
 //	配列dataを作成する
-//	【引数にdata、'あ'を与えたメソッドsearchArrayの戻り値】の長さが0の場合、「該当する文字列はありませんでした」を表示する
-//	そうでない場合、戻り値の要素を全て表示する
+//	配列arrayを【引数にdata、'あ'を与えたメソッドsearchArrayの戻り値】で初期化する
+//	arrayの長さが0の場合、「該当する文字列はありませんでした」を表示する
+//	そうでない場合、arrayの要素を全て表示する
 	public static void main(String[] args) {
 		String[] data = {"あさがお", "ひまわり", "きく", "あじさい", "ゆり"};
-		if (searchArray(data, 'あ').size() == 0) {
+		ArrayList<String> array = searchArray(data, 'あ');
+		
+		if (array.size() == 0) {
 			System.out.println("該当する文字列はありませんでした");
 		} else {
-			System.out.println(searchArray(data, 'あ'));
+			System.out.println(array);
 		}
 		
 
