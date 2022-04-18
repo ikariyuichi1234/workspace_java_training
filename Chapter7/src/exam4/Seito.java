@@ -8,6 +8,10 @@ class Seito {
 	public void SetName (String setnm) {
 		Name = setnm;
 	}
+	public String GetName () {
+		return Name;
+	}
+	
 	public void SetScore (int setsc) {
 		Score = setsc;
 	}
