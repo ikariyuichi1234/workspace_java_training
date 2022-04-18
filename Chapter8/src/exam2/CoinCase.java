@@ -8,6 +8,7 @@ public class CoinCase {
 	public int yen5;
 	public int yen1;
 	public int amount;
+
 	
 	public void AddCoins (int kindNum, int coinNum) {
 		if (kindNum == 500) {
@@ -47,4 +48,6 @@ public class CoinCase {
 		amount = yen500 * 500 + yen100 * 100 + yen50 * 50 + yen10 * 10 + yen5 * 5 + yen1 * 1;
 		return amount;
 	}
+	
+
 }
