@@ -8,7 +8,10 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+
 import src.exam.Exam1;
+import exam.Exam1;
+
 
 class Exam1Test {
 	
@@ -36,7 +39,12 @@ class Exam1Test {
 
 	@Test
 	public void 値を２乗する() {
+
 		assertEquals(Exam1.exp(5), 5 * 5);
+
+		int testnum = 10;
+		assertEquals(Exam1.exp(testnum), testnum * testnum);
+
 		}
 
 	}
