@@ -11,6 +11,7 @@ public class ExamTest1 {
 	ExamTest1(int n){
 		for (int i = 0; i < 10; i++) {
 			numbers[i] = n;
+			n++;
 		}
 	}
 	public void printArray () {
