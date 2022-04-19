@@ -1,5 +1,4 @@
-
-package test;
+package exam1;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -9,9 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import exam.Exam2;
-
-class Exam2Test {
+class testCat {
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -28,16 +25,16 @@ class Exam2Test {
 	@AfterEach
 	void tearDown() throws Exception {
 	}
+	
+	Cat caTest = new Cat();
 
-	@Test
-	public void test() {
-
-		assertEquals(Exam2.average(8,12), (8 + 12) / 2);
-
-		int testnum00 = 100;
-		int testnum01 = 1000;
-		assertEquals(Exam2.average(testnum00, testnum01), (testnum00 + testnum01) / 2);
-
+	@Test	
+	public void 名前を設定する () {
+		caTest.Name = "にゃんじろう";
+		assertEquals(caTest.Name, "にゃんじろう");
 	}
-
+	public void 年齢を設定する () {
+		caTest.Age = 10;
+		assertEquals(caTest.Age, 10);
+	}
 }

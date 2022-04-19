@@ -1,5 +1,4 @@
-
-package test;
+package exam;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -9,9 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import exam.Exam2;
-
-class Exam2Test {
+class JUnitSample {
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -30,14 +27,8 @@ class Exam2Test {
 	}
 
 	@Test
-	public void test() {
-
-		assertEquals(Exam2.average(8,12), (8 + 12) / 2);
-
-		int testnum00 = 100;
-		int testnum01 = 1000;
-		assertEquals(Exam2.average(testnum00, testnum01), (testnum00 + testnum01) / 2);
-
+	void test() {
+		fail("まだ実装されていません");
 	}
 
 }

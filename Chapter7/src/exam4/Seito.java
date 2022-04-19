@@ -1,9 +1,9 @@
 package exam4;
 
 class Seito {
-	private String Name;
-	private int Score;
-	private String Rank;
+	public String Name;
+	public int Score;
+	public String Rank;
 	
 	public void SetName (String setnm) {
 		Name = setnm;
@@ -18,7 +18,7 @@ class Seito {
 	public void ShowProfile () {
 		System.out.println(Name + "さんは" + Score + "点でした。");
 	}
-	public void  ClassifyRank () {
+	public String  ClassifyRank () {
 		if (Score >= 80) {
 			Rank = "A";
 		} else if (Score >= 70) {
@@ -26,8 +26,6 @@ class Seito {
 		} else if (Score >= 50) {
 			Rank = "C";
 		}
-	}
-	public void ShowRank () {
-		System.out.println(Name + "さんは" + Rank + "ランクです。");
+		return Rank;
 	}
 }
