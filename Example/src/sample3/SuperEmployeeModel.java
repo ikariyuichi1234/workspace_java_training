@@ -17,10 +17,9 @@ class SuperEmployeeModel{
 	}
 	
 	public SuperEmployeeModel(String nm, int no, String date, String pst) {
-	this.name = nm;
-	this.number = no;
-	this.hireDate = date;
-	this.post = pst;
-}
-
+		this.name = nm;
+		this.number = no;
+		this.hireDate = date;
+		this.post = pst;
+	}
 }
