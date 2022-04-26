@@ -13,5 +13,4 @@ public class ChildLeaderEmployeeModel extends SuperEmployeeModel {
 		this.post = pst;
 		this.postBenefit = benef;
 	}
-
 }
