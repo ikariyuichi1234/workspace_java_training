@@ -48,19 +48,14 @@ public class Example5 {
 
 
 //	メソッド１
-//	strを【引数にstrを与えたメソッド２の戻り値】で初期化する
-//	strに"No_name"が含まれている場合、falseを戻り値とする
-//	それ以外の場合、trueを戻り値とする
+//	Nameが空欄の場合false、そうでなければtrueを返す
 	public static boolean check01 () {
-		if (Name.contains("No_name")) {
-
+		if (Name.equals("")) {
 			return false;
 		} else {
 			return true;
 		}
 	}
-
-//	
 //	メソッド２
 //	Nameに0~9の数字が含まれる場合false、そうでなければtrueを返す
 	public static boolean check02 () {
